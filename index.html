@@ -82,7 +82,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-
               <span class="link-block">
                 <a href="https://github.com/haoli-zbdbc"
                    class="external-link button is-normal is-rounded is-dark">
@@ -92,7 +91,7 @@
                   <span>Code</span>
                   </a>
               </span>
-
+              <!-- Dataset Link. -->
               <span class="link-block">
                 <a href="https://github.com/haoli-zbdbc"
                    class="external-link button is-normal is-rounded is-dark">
@@ -117,21 +116,26 @@
            alt="Hero Teaser Image"
            class="teaser-image"
            height="100%">
-      <h2 class="subtitle has-text-centered">
-        <strong>HieraFashDiff</strong> generates apparel design drafts with corresponding design elements based
-        on high-level design ideals. Subsequently, based on a draft design, our approach can iteratively edit the corresponding regions precisely according to
-        the text prompt of the low level while keeping the other regions unchanged.
-      </h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="subtitle">
+            <strong>HieraFashDiff</strong> generates apparel design drafts with corresponding design elements based
+            on high-level design ideals. Subsequently, based on a draft design, our approach can iteratively edit the corresponding regions precisely according to
+            the text prompt of the low level while keeping the other regions unchanged.
+          </h2>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
+
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
+      <h3 class="title is-4">Fashion Synthesis and Editing</h3>
       <div id="results-carousel" class="carousel results-carousel">
-        <h3 class="title is-3">Fashion Synthesis and Editing</h3>
         <div class="item item-steve">
           <img src="./static/images/seri/2024-01-14_164147.jpg"
                alt="Steve"
@@ -189,6 +193,7 @@
 
 
 
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -229,11 +234,14 @@
         <img src="./static/images/overveiw_1.jpg"
              alt="Overview Image"
              height="100%">
-        <p>
-          Overview of the proposed HieraFashDiff, which consists of: (a) Hierarchy-aware Multi-stage Diffusion Model, (b) Coarse-grained Fashion Draft Synthesis, and (c) Fine-grained Latent-based Editing. The initial step involves employing the Prompt Schedule Module (PSM) to hierarchize high-level design concepts and low-level attributes from the input text, translating these into time sequences at intervals S per hierarchy.
-        </p>
+        <div class="content has-text-justified">
+          <p>
+            Overview of the proposed HieraFashDiff, which consists of: (a) Hierarchy-aware Multi-stage Diffusion Model, (b) Coarse-grained Fashion Draft Synthesis, and (c) Fine-grained Latent-based Editing. The initial step involves employing the Prompt Schedule Module (PSM) to hierarchize high-level design concepts and low-level attributes from the input text, translating these into time sequences at intervals S per hierarchy.
+          </p>
+        </div>
       </div>
     </div>
+    
     
 
 
@@ -245,19 +253,21 @@
         <img src="./static/images/fig.4_1.jpg"
              alt="Coarse-grained Fashion Draft Synthesis Image"
              height="100%">
-    
-        <p>
-          Qualitative comparison of HieraFashDiff with state-of-the-art (SOTA) generation approaches. We show a draft garment design generated in the text condition. Current mainstream text-to-image generation models include Stable Diffusion-based and Stable Diffusion fine-tuned on the HieraFashion dataset. Our method can enable the correspondence between the desired high-level design concepts with the generated results.
-        </p>
-    
+        <div class="content has-text-justified">
+          <p>
+            Qualitative comparison of HieraFashDiff with state-of-the-art (SOTA) generation approaches. We show a draft garment design generated in the text condition. Current mainstream text-to-image generation models include Stable Diffusion-based and Stable Diffusion fine-tuned on the HieraFashion dataset. Our method can enable the correspondence between the desired high-level design concepts with the generated results.
+          </p>
+        </div>
+        
         <h3 class="title is-4">Fine-grained Latent-based Editing</h3>
         <img src="./static/images/fig.5_1.jpg"
              alt="Fine-grained Latent-based Editing Image"
              height="100%">
-    
-        <p>
-          Evaluation on Local Editing. Stable Diffusion models cannot understand the meaning of "long dress" and cannot accurately localize the editing region, resulting in poor editing results. In contrast, our approach allows the model to learn the correspondence between the text description and the local area.
-        </p>
+        <div class="content has-text-justified">
+          <p>
+            Evaluation on Local Editing. Stable Diffusion models cannot understand the meaning of "long dress" and cannot accurately localize the editing region, resulting in poor editing results. In contrast, our approach allows the model to learn the correspondence between the text description and the local area.
+          </p>
+        </div>
 
         <h3 class="title is-4">Related Links</h3>
         <div class="content has-text-justified">
